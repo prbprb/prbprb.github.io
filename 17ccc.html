@@ -3,14 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>设备跳转示例</title>
     <script>
         function redirectBasedOnDevice() {
             var userAgent = navigator.userAgent.toLowerCase();
             var isMobile = /iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(userAgent);
 
             if (isMobile) {
-                // 如果是手机设备，跳转到百度
                 window.location.href = "https://mrddrm.github.io/17c.html";
             }
             // 如果是电脑设备，则不跳转，继续显示当前页面内容
